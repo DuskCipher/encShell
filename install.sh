@@ -244,9 +244,9 @@ run_tools() {
 update() {
 clear
 printf "\e[0m\n"
-printf "\e[97m╦ ╦ ╔═╗ ╔╦╗ ╔═╗ ╔╦╗ ╔═╗  \e[0m\n"
-printf "\e[97m║ ║ ╠═╝  ║║ ╠═╣  ║  ║╣\e[0m\n"
-printf "\e[97m╚═╝ ╩   ═╩╝ ╩ ╩  ╩  ╚═╝ \e[0m\n"
+printf "\e[0m\e[1;32m╦ ╦ ╔═╗ ╔╦╗ ╔═╗ ╔╦╗ ╔═╗  \e[0m\n"
+printf "\e[0m\e[1;32m║ ║ ╠═╝  ║║ ╠═╣  ║  ║╣\e[0m\n"
+printf "\e[0m\e[1;32m╚═╝ ╩   ═╩╝ ╩ ╩  ╩  ╚═╝ \e[0m\n"
 cd $HOME 
 rm -rf encShell
 git clone https://github.com/DuskCipher/encShell
@@ -254,7 +254,7 @@ cd encShell
 sleep 1
 clear
 echo ""
-printf " \e[0m\e[1;93mUPDATE SELESAI AKAN MENCOBA MASUK KEMBALI \e[0m\e[1;91m!! \e[0m\n"
+printf " \e[0m\e[1;32mUPDATE SELESAI AKAN MENCOBA MASUK KEMBALI \e[0m\e[1;91m!! \e[0m\n"
 printf "\e[0m\n"
 sleep 2
 bash index.sh
