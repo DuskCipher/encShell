@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "bash-obfuscate": "^1.2.1"
+  }
+}
