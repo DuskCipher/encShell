@@ -241,6 +241,25 @@ run_tools() {
     fi
 }
 
+update() {
+clear
+printf "\e[0m\n"
+printf "\e[97m╦ ╦ ╔═╗ ╔╦╗ ╔═╗ ╔╦╗ ╔═╗  \e[0m\n"
+printf "\e[97m║ ║ ╠═╝  ║║ ╠═╣  ║  ║╣\e[0m\n"
+printf "\e[97m╚═╝ ╩   ═╩╝ ╩ ╩  ╩  ╚═╝ \e[0m\n"
+cd $HOME 
+cdrm -rf encShell
+git clone https://github.com/DuskCipher/encShell
+cd encShell
+sleep 1
+clear
+echo ""
+printf " \e[0m\e[1;93mUPDATE SELESAI AKAN MENCOBA MASUK KEMBALI \e[0m\e[1;91m!! \e[0m\n"
+printf "\e[0m\n"
+sleep 2
+bash index.sh
+clear
+}
 # Cek apakah tools sudah ready
 check_tools() {
     if [ -f "main.py" ]; then
