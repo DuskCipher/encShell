@@ -81,9 +81,9 @@ printf "\e[0m\e[1;32m   ║ ║ ║   ╠═╣   ╔═╝ ║ ║ ║ ║ ║ 
 printf "\e[0m\e[1;32m   ╚═╝ ╚═╝ ╩ ╩   ╚═╝ ╚═╝ ╚═╝ ╚═╝    ╩  ╚═╝ ╚═╝ ╩═╝ ╚═╝   \e[0m\n"
 printf "\e[1;32m                        Encrypt/Decrypt \e[0m\e[1;33mBash Tools \e[0m\e[1;31mVersion : ${__version__}    \e[0m\n"
 printf "\e[0m\n"
-printf "   \e[0m\e[1;37m┌─────────────────────────────────────────┐ \e[0m\n"
+printf "   \e[0m\e[1;37m┌─────────────────────────────────────────────┐ \e[0m\n"
 printf "\e[0m\e[1;33m   \e[0m\e[1;37m│  \e[0m\e[1;33mCreated By UCH-2009 \e[0m\e[1;31m(\e[0m\e[1;33m Encrypt/Decrypt Tools \e[0m\e[1;31m)  \e[0m\e[1;37m│  \e[0m\n"
-printf "   └─────────────────────────────────────────┘"
+printf "   └─────────────────────────────────────────────┘"
 printf "\e[0m\n"
 }
 
@@ -95,6 +95,7 @@ install_dependencies() {
 printf "\e[0m\n"
 printf "  \e[0m\e[1;91m[\e[0m\e[1;97m01\e[0m\e[1;91m]\e[0m\e[1;93m SKIP SETUP\e[0m\n"
 printf "  \e[0m\e[1;91m[\e[0m\e[1;97m02\e[0m\e[1;91m]\e[0m\e[1;93m INSTALL DEPENDENCIES\e[0m\n"
+printf "  \e[0m\e[1;91m[\e[0m\e[1;97m02\e[0m\e[1;91m]\e[0m\e[1;93m UPDATE TOOLS\e[0m\n"
 printf "\e[0m\n"
 read -p $'  \e[1;31m>>\e[0m\e[1;96m  \en' setup
 
@@ -102,6 +103,8 @@ if [[ $setup == 1 || $setup == 01 ]]; then
     run_tools
 elif [[ $setup == 2 || $setup == 02 ]]; then
     install_packages
+elif [[ $setup == 3 || $setup == 03 ]]; then
+    update    
 else
     printf " \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\e[1;93m Invalid option \e[1;91m[\e[0m\e[1;97m!\e[0m\e[1;91m]\e[0m\n"
     sleep 1
