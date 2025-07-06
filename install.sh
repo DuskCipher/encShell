@@ -247,7 +247,7 @@ printf "\e[0m\n"
 printf "\e[0m\e[1;32m╦ ╦ ╔═╗ ╔╦╗ ╔═╗ ╔╦╗ ╔═╗  \e[0m\n"
 printf "\e[0m\e[1;32m║ ║ ╠═╝  ║║ ╠═╣  ║  ║╣\e[0m\n"
 printf "\e[0m\e[1;32m╚═╝ ╩   ═╩╝ ╩ ╩  ╩  ╚═╝ \e[0m\n"
-cd $HOME 
+cd 
 rm -rf encShell
 git clone https://github.com/DuskCipher/encShell
 cd encShell
