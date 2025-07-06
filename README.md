@@ -1,5 +1,5 @@
 
-# UCH-2009 Encrypt/Decrypt Tools 🔐
+# DuskCipher Encrypt/Decrypt Tools 🔐
 
 [![Version](https://img.shields.io/badge/version-2.0-blue.svg)](https://github.com/uch-2009/encrypt-tools)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
